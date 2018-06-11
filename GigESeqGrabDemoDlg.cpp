@@ -230,14 +230,8 @@ BOOL CGigESeqGrabDemoDlg::OnInitDialog(void)
    ///		***FUNCTIONS TO CALL IN PLACE OF CLICKING***
    CGigESeqGrabDemoDlg::OnLoadAcqDeviceConfig();
    CGigESeqGrabDemoDlg::OnBufferOptions();
-  // m_Buffers->SetCount(1);  ///Set number of frames to be grabbed here 
-   /*
-   CGigESeqGrabDemoDlg::OnRecord();
-   Sleep(10050);
-   */  //Potential fix but inefficent
-
    CGigESeqGrabDemoDlg::OnRecord();  
-  // m_Buffers->Save("C:\\Users\\Bobby\\Desktop\\test.avi", "-format avi", -1, 300);
+   std::exit(1);
    
    
    
